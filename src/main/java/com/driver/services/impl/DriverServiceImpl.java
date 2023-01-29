@@ -31,7 +31,7 @@ public class DriverServiceImpl implements DriverService {
 	public void removeDriver(int driverId){
 		// Delete driver without using deleteById function
 		Driver driver=driverRepository3.findById(driverId).get();
-		if(driver !=driver)
+		if(driver !=null)
 			driverRepository3.delete(driver);
 	}
 
@@ -40,7 +40,7 @@ public class DriverServiceImpl implements DriverService {
 		//Set the status of respective car to unavailable
 		Driver driver=driverRepository3.findById(driverId).get();
 		Cab cab= driver.getCab();
-		cab.setAvailable(cab.getAvailable());
+		cab.setAvailable(false);
 
 	}
 }
