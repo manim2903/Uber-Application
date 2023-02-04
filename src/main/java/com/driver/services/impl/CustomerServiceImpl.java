@@ -61,7 +61,7 @@ public class CustomerServiceImpl implements CustomerService {
 			}
 		}
 		if(driver==null){
-			throw new Exception("No Cab available");
+			throw new Exception("No cab available!");
 		}
 
 		//Set the attributes of the entity layer
