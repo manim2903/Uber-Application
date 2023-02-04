@@ -19,14 +19,14 @@ public class Driver {
     private Cab cab;
 
     @OneToMany(mappedBy = "driver",cascade = CascadeType.ALL)
-    private List<TripBooking> tripBooking;
+    private List<TripBooking> tripBookingList;
 
-    public List<TripBooking> getTripBooking() {
-        return tripBooking;
+    public List<TripBooking> getTripBookingList() {
+        return tripBookingList;
     }
 
-    public void setTripBooking(List<TripBooking> tripBooking) {
-        this.tripBooking = tripBooking;
+    public void setTripBookingList(List<TripBooking> tripBookingList) {
+        this.tripBookingList = tripBookingList;
     }
 
     public int getDriverId() {
