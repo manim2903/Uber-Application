@@ -14,7 +14,7 @@ public class Customer {
     private String password;
 
     @OneToMany(mappedBy = "customer",cascade = CascadeType.ALL)
-    private List<TripBooking> tripBooking;
+    private List<TripBooking> tripBookingList;
 
     public int getCustomerId() {
         return customerId;
@@ -40,11 +40,11 @@ public class Customer {
         this.password = password;
     }
 
-    public List<TripBooking> getTripBooking() {
-        return tripBooking;
+    public List<TripBooking> getTripBookingList() {
+        return tripBookingList;
     }
 
-    public void setTripBooking(List<TripBooking> tripBooking) {
-        this.tripBooking = tripBooking;
+    public void setTripBookingList(List<TripBooking> tripBookingList) {
+        this.tripBookingList = tripBookingList;
     }
 }
