@@ -51,6 +51,7 @@ public class CustomerServiceImpl implements CustomerService {
 		TripBooking tripBooking=new TripBooking();
 		Driver driver=null;
 
+		//basic condition filter
 		List<Driver> allDrivers=driverRepository2.findAll();
 
 		for(Driver driver1 : allDrivers){
